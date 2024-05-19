@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>Your website html</title>
+            
+        <!-- Include the css file   -->
+        <link defer href="https://AlrightyLabs.community.druidplatform.com/v2/druid_webchat_v2.css" rel="stylesheet">
+       
+   </head>
+   <body>
+       <!-- Include the script file   -->
+       <script defer type="text/javascript" src="https://AlrightyLabs.community.druidplatform.com/v2/druid_webchat_v2.js"></script>
+        
+    <!-- Init the webchat component on document load -->
+       <script type="text/javascript">
+     
+            document.addEventListener("DOMContentLoaded", function(event) {
+                 DruidWebchat_v2.init({
+                       <!-- Common settings  -->
+                       botId: "e6b2030e-5b04-4128-b0d9-08dc70027fc9",
+                       baseUrl: "https://druidapi.comm.eu.druidplatform.com",
+                        
+                       UI: {
+                          "autoExpandEnabled": true,
+                          "fullScreenMode": true,
+                          "fullScreenMode_leftRightClass": "",
+                          "fullScreenMode_mainChatClass": "col-md-12",
+                          containerElement: document.getElementById('DruidContainerElement') //-> specify the webchat expand DOM element
+                       }
+                  });
+             });
+       </script>
+       <div id="DruidContainerElement"></div>
+     </body>
+</html>
